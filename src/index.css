@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 dark:text-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .animate-scaleIn {
+    animation: scaleIn 1.2s ease-in-out;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animate-skill-progress {
+    animation: skillProgress 1.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes skillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--final-width, attr(data-width));
+  }
+}
+
+.skill-progress-bar.animate-skill-progress {
+  width: attr(data-width);
+}
+
+.dark .skill-progress-bar.animate-skill-progress {
+  width: attr(data-width);
+}
+
+/* Fix for skill bar animation */
+.skill-progress-bar.animate-skill-progress {
+  animation-name: none !important;
+  width: 0;
+}
+
+.skill-progress-bar.animate-skill-progress {
+  animation: none;
+  width: var(--final-width);
+  transition: width 1.5s ease-in-out;
+}
+
+/* Apply the width from data-width attribute */
+#skills.section-active .skill-progress-bar {
+  width: var(--final-width) !important;
+}
