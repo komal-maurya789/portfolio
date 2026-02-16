@@ -94,10 +94,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto"></div>
-          {/* <p className="mt-6 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss a potential collaboration?
-            Feel free to reach out and I'll get back to you as soon as possible.
-          </p> */}
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -145,27 +142,26 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                 <a href="https://www.linkedin.com/in/komalmaurya" className={`p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-100'} transition-colors shadow-md`}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
-            <a
-  href="https://github.com/komal-maurya789"
-  className={`p-3 rounded-full ${
-    darkMode ? "bg-gray-800 hover:bg-gray-700" : "bg-white hover:bg-gray-100"
-  } transition-colors shadow-md`}
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="text-blue-500"
-  >
-    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-  </svg>
-</a>
+                <a
+                  href="https://github.com/komal-maurya789"
+                  className={`p-3 rounded-full ${darkMode ? "bg-gray-800 hover:bg-gray-700" : "bg-white hover:bg-gray-100"
+                    } transition-colors shadow-md`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-blue-500"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </a>
 
 
               </div>
@@ -191,8 +187,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                   value={formData.name}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg ${darkMode
-                      ? 'bg-gray-700 border-gray-600 text-white'
-                      : 'bg-gray-50 border-gray-300 text-gray-900'
+                    ? 'bg-gray-700 border-gray-600 text-white'
+                    : 'bg-gray-50 border-gray-300 text-gray-900'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors`}
                   placeholder="Your name"
                 />
@@ -208,8 +204,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                   value={formData.email}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg ${darkMode
-                      ? 'bg-gray-700 border-gray-600 text-white'
-                      : 'bg-gray-50 border-gray-300 text-gray-900'
+                    ? 'bg-gray-700 border-gray-600 text-white'
+                    : 'bg-gray-50 border-gray-300 text-gray-900'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors`}
                   placeholder="Your email"
                 />
@@ -225,8 +221,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                   value={formData.subject}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg ${darkMode
-                      ? 'bg-gray-700 border-gray-600 text-white'
-                      : 'bg-gray-50 border-gray-300 text-gray-900'
+                    ? 'bg-gray-700 border-gray-600 text-white'
+                    : 'bg-gray-50 border-gray-300 text-gray-900'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors`}
                   placeholder="Subject of your message"
                 />
@@ -241,8 +237,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                   value={formData.message}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg ${darkMode
-                      ? 'bg-gray-700 border-gray-600 text-white'
-                      : 'bg-gray-50 border-gray-300 text-gray-900'
+                    ? 'bg-gray-700 border-gray-600 text-white'
+                    : 'bg-gray-50 border-gray-300 text-gray-900'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors`}
                   placeholder="Your message"
                 ></textarea>

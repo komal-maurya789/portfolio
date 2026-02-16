@@ -20,7 +20,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="w-full max-w-sm mx-auto rounded-xl shadow-xl overflow-hidden">
             <img
-              src="./Photo.jpeg"
+              src="../images/Photo.jpeg"
               alt="Komal Maurya"
               className="w-full h-full object-cover aspect-[3/4] transition-transform duration-500 hover:scale-105"
             />
@@ -54,7 +54,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             </div>
 
             <a
-              href="/Komal_maurya_CV.pdf"
+              href="./images/Komal_maurya_CV.pdf"
               download="Komal_maurya_CV.pdf"
               className="inline-block"
             >
